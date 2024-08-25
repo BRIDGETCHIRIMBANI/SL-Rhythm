@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -61,4 +61,155 @@
   </footer>
 
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Student Leadership Journey</title>
+
+</head>
+<body>
+
+<header>
+    <h1>Student Leadership Journey</h1>
+</header>
+
+<!-- Steps Section -->
+<div class="steps-container">
+    <div class="step" data-target="year1-content">
+        <h2>Finding your Tribe</h2>
+    </div>
+    <div class="step" data-target="year2-content">
+        <h2>Marking your Tribe</h2>
+    </div>
+    <div class="step" data-target="year3-content">
+        <h2>Leading your Tribe</h2>
+    </div>
+    <div class="step" data-target="year4-content">
+        <h2>Expanding your Tribe</h2>
+    </div>
+</div>
+
+<!-- Year 1 Content -->
+<div id="year1-content" class="content-section">
+    <h2>Year 1 - Finding your Tribe</h2>
+    <div class="year-content">
+        <h3>Orientation</h3>
+        <div class="image-placeholder">Image Placeholder</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="year-content">
+        <h3>Term 1</h3>
+        <div class="image-placeholder">Image Placeholder</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="year-content">
+        <h3>Term 2</h3>
+        <div class="image-placeholder">Image Placeholder</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="year-content">
+        <h3>Internship Cycle</h3>
+        <div class="image-placeholder">Image Placeholder</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</div>
+
+<!-- Year 2 Content -->
+<div id="year2-content" class="content-section">
+    <h2>Year 2 - Marking your Tribe</h2>
+    <div class="year-content">
+        <h3>Re-Orientation</h3>
+        <div class="image-placeholder">Image Placeholder</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="year-content">
+        <h3>Term 1</h3>
+        <div class="image-placeholder">Image Placeholder</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="year-content">
+        <h3>Term 2</h3>
+        <div class="image-placeholder">Image Placeholder</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="year-content">
+        <h3>Internship Cycle</h3>
+        <div class="image-placeholder">Image Placeholder</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</div>
+
+<!-- Year 3 Content -->
+<div id="year3-content" class="content-section">
+    <h2>Year 3 - Leading your Tribe</h2>
+    <div class="year-content">
+        <h3>Orientation</h3>
+        <div class="image-placeholder">Image Placeholder</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="year-content">
+        <h3>Term 1</h3>
+        <div class="image-placeholder">Image Placeholder</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="year-content">
+        <h3>Term 2</h3>
+        <div class="image-placeholder">Image Placeholder</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="year-content">
+        <h3>Internship Cycle</h3>
+        <div class="image-placeholder">Image Placeholder</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</div>
+
+<!-- Year 4 Content -->
+<div id="year4-content" class="content-section">
+    <h2>Year 4 - Expanding your Tribe</h2>
+    <div class="year-content">
+        <h3>Mission Capstone</h3>
+        <div class="image-placeholder">Image Placeholder</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="year-content">
+        <h3>Graduation</h3>
+        <div class="image-placeholder">Image Placeholder</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="year-content">
+        <h3>Alumni Network</h3>
+        <div class="image-placeholder">Image Placeholder</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</div>
+
+<script>
+    // JavaScript to handle clickable steps
+    const steps = document.querySelectorAll('.step');
+    const sections = document.querySelectorAll('.content-section');
+
+    steps.forEach(step => {
+        step.addEventListener('click', function() {
+            // Hide all sections
+            sections.forEach(section => section.classList.remove('active'));
+            
+            // Show the targeted section
+            const target = this.getAttribute('data-target');
+            document.getElementById(target).classList.add('active');
+        });
+    });
+</script>
+
+<footer>
+  <p>&copy; 2024 ALCHE Student Leadership Journey. All Rights Reserved.</p>
+</footer>
+
+</body>
 </html>
+
